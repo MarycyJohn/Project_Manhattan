@@ -54,7 +54,7 @@
             this.Etykieta.AutoSize = true;
             this.Etykieta.Location = new System.Drawing.Point(29, 58);
             this.Etykieta.Name = "Etykieta";
-            this.Etykieta.Size = new System.Drawing.Size(45, 13);
+            this.Etykieta.Size = new System.Drawing.Size(49, 15);
             this.Etykieta.TabIndex = 2;
             this.Etykieta.Text = "Etykieta";
             // 
@@ -79,6 +79,7 @@
             this.Controls.Add(this.Okno_search);
             this.Name = "Glow";
             this.Text = "SQL Data Access Graclik/Kromolski";
+            this.Load += new System.EventHandler(this.Glow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

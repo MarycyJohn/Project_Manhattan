@@ -34,5 +34,10 @@ namespace ProjektMaster
             UpdateBinding();
 
         }
+
+        private void Glow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

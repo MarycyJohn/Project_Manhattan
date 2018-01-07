@@ -12,7 +12,7 @@ namespace ProjektMaster
     {
         public List<Autko> GetAutko(string marka)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Support.CnnVal("SkupAut")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Support.CnnVal("Piesek")))
             {
                 var output = connection.Query<Autko>($"select * from dbo.auta where marka = '{ marka }'").ToList();
                 return output;
@@ -21,3 +21,5 @@ namespace ProjektMaster
         }
     }
 }
+
+//<add name ="SkupAut" connectionString="Server=.;Database=SkupAut;Trusted_Connection=True;" providerName="System.Data.SqlClient"/>
